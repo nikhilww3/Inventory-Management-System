@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-
+# database created
 DATABASE_URL = "sqlite:///./alerts.db"
 
 engine = create_engine(

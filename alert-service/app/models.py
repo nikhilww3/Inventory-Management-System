@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, Boolean
 from app.database import Base
-
+# type of contain in table of alert
 class Alert(Base):
     __tablename__ = 'alerts'
     

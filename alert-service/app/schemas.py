@@ -5,7 +5,7 @@ class AlertCheck(BaseModel):
     quantity: int
     threshold: int
     
-    
+ # schema for alert system   
 class AlertResponse(BaseModel):
     id: int
     item_id: int

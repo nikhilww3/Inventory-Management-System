@@ -2,6 +2,7 @@ from sqlalchemy.orm import Session
 from app import models
 
 def check_and_create_alert(db: Session, item_id: int, quantity: int, threshold:int):
+    # checking the existing alert
     existing_alert = db.query(models.Alert).filter(
         models.Alert.item_id == item_id,
         models.Alert.is_active == True

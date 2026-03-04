@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from app import models, schemas, crud, database
 import requests
 
+# create the database
 models.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI(title="Inventory service")
@@ -13,7 +14,10 @@ def get_db():
         yield db
     finally:
         db.close()
-        
+
+
+# api crud calls
+    
 @app.get("/")
 def read_root():
     return {"message": "Inventory service is running"}
