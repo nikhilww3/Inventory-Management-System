@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Dashboard</title>
+</head>
+
+<body>
+
+<h1>Manufacturing Inventory Dashboard</h1>
+
+<h2>Add Item</h2>
+
+<input id="name" placeholder="Item name">
+<input id="category" placeholder="raw / finished">
+<input id="quantity" placeholder="quantity">
+<input id="threshold" placeholder="threshold">
+
+<button onclick="addItem()">Add Item</button>
+
+<h2>Inventory Items</h2>
+
+<button onclick="loadItems()">Refresh Inventory</button>
+
+<ul id="items"></ul>
+
+<h2>Low Stock Items</h2>
+
+<button onclick="loadLowStock()">Show Low Stock</button>
+
+<ul id="lowStock"></ul>
+
+<h2>Inventory Summary</h2>
+
+<button onclick="loadSummary()">Show Summary</button>
+
+<pre id="summary"></pre>
+
+
+</body>
+</html>
